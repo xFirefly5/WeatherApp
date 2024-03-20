@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+body{    
+    background: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.App{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    /* height: 100vh; */
+}
+
+.CityInputForm{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    font-size: 1.5rem;
+    background-color: rgba(240, 248, 255, 0.31);
+    border-radius: 20px;
+    padding: 20px;
+}
+.CityInputForm label {
+    font-weight: 600;
+    margin-right: 10px;
+}
+.CityInputForm input {
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+}
+.CityInputForm input::placeholder {
+    font-size: 1.2rem;
+}
+.CityInputForm .formBtn {
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+.CityInputForm .formBtn:hover{
+    background-color: rgba(245, 245, 245, 0.81);
+}
+
+
+.MainWindow{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    background-color: rgba(240, 248, 255, 0.31);
+    padding: 50px;
+    border-radius: 20px;
+  }
+.MainWindow h2{
+    margin-bottom: 15px;
+  }
+.wetherIcon{
+    width:200px;
+  }
+.weather, .temp, .day{
+    font-size: 1.6rem;
+}
+
+
+
+.details{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 40px;
+    align-items:flex-start;
+}
+h3 img{
+    width: 25px;
+}
+
+.moreDetails{
+    background-color: rgba(245, 245, 245, 0.659);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin:50px 0;
+    padding: 20px;
+}
+.infoDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.infoDiv img{
+    width: 50px;
+    margin: 5px 100px ;
+    filter: drop-shadow(1px 0px 3px #000000);
+}
+
+.hidden{
+    display: none;
+}
+
+@media  (max-width: 1200px) {
+    .CityInputForm{
+        width: 45%;
+    }
+    .CityInputForm input{
+        width: 200px;
+        height: 30px;
+    }
+    .CityInputForm label{
+        font-size: 1.5rem;
+    }
+
+    .MainWindow{
+        width: 45%;
+        font-size: 2rem;
+      }
+    .wetherIcon{
+        width:200px;
+      }
+    .weather, .temp, .day{
+        font-size: 1.6rem;
+    }
+    .CityInputForm .formBtn {
+        height: 30px;
+        font-size: 1rem;
+    }
+    .noCity{
+        font-size: 1.9rem;
+    }
+}
+
+@media(max-width: 992px) {
+    .CityInputForm{
+        width: 50%;
+    }
+    .CityInputForm input{
+        width: 150px;
+        height: 25px;
+    }
+    .CityInputForm input::placeholder {
+        font-size: 1rem;
+    }
+    .CityInputForm label{
+        font-size: 1.4rem;
+    }
+    .MainWindow{
+        width: 50%;
+        font-size: 1.8rem;
+      }
+    .wetherIcon{
+        width:150px;
+      }
+    .weather, .temp, .day{
+        font-size: 1.5rem;
+    }
+    .CityInputForm .formBtn {
+        height: 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .CityInputForm{
+        width: 50%;
+    }
+    .CityInputForm input{
+        width: 150px;
+        height: 20px;
+    }
+    .CityInputForm input::placeholder {
+        font-size: 1rem;
+    }
+    .CityInputForm label{
+        font-size: 1rem;
+    }
+    .MainWindow{
+        width: 50%;
+        font-size: 1.5rem;
+      }
+    .wetherIcon{
+        width:150px;
+      }
+    .weather, .temp, .day{
+        font-size: 1.3rem;
+    }
+    .noCity{
+        font-size: 1.3rem;
+    }
+    .CityInputForm .formBtn {
+        height: 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .CityInputForm{
+        width: 40%;
+    }
+    .CityInputForm input{
+        width: 100px;
+        height: 20px;
+    }
+    .CityInputForm input::placeholder {
+        font-size: 1rem;
+    }
+    .CityInputForm label{
+        font-size: 1rem;
+    }
+    .MainWindow{
+        width: 60%;
+        font-size: 1.4rem;
+      }
+    .wetherIcon{
+        width:150px;
+      }
+    .weather, .temp, .day{
+        font-size: 1.2rem;
+    }
+}
