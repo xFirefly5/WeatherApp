@@ -10,7 +10,7 @@ import loading from './assets/loading.png'
 
 function App() {
   const API_KEY = "e9a6418b01ae41f4a38155958241103";
-  const BASE_URL = "http://api.weatherapi.com/v1/current.json";
+  const BASE_URL = "https://api.weatherapi.com/v1/current.json";
 
   const [initial, setInitial] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
