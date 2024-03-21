@@ -11,7 +11,7 @@ function MoreDetails({fetchData}) {
     return (
         <> 
             {fetchData && <>
-                    <h3 className="details">More details about the city<span><img src={below} alt=""/></span>:</h3>
+                    <h3 className="details">More details for the place<span><img src={below} alt=""/></span>:</h3>
                     <section className="moreDetails">
                         <div className="infoDiv">
                             <img src={country} alt=""/>

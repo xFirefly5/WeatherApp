@@ -3,7 +3,7 @@ function CityInput({city, setCity, handleSubmit}) {
 
     return (
         <form onSubmit={handleSubmit} className="CityInputForm">
-            <label htmlFor="city">Enter a city:</label>
+            <label htmlFor="city">Type a place:</label>
             <input
                 type="text"
                 placeholder="here"

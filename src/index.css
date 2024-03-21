@@ -84,8 +84,8 @@ body{
 }
 
 .noCity{
-  margin-left: 30px;
-  text-align: left;
+  margin:0 auto;
+  /* text-align: left; */
 }
 
 
